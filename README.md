@@ -5,7 +5,7 @@ I use <a href="http://kubernetes.io/" target="_blank">Kubernetes</a>, <a href="h
 
 A bit of an introduction to <a href="https://en.wikipedia.org/wiki/Cloud_computing" target="_blank">Cloud Computing</a> is ideal, and of course reference to <a href="https://cloud.google.com" target="_blank">Google Cloud Services</a> (our preferred cloud platform) is mandatory.
 
-Step 1: connect to Google Cloud Shell. This is a shell environment for managing resources hosted on Google Cloud Platform. You will need a bit of Linux Skills to use this tool. See <a href="https://cloud.google.com/shell/docs/quickstart" target="_blank"> this page</a> for the getting started details.
+Step 1: connect to Google Cloud Shell. This is a shell environment for managing resources hosted on Google Cloud Platform. You will need a bit of Linux Skills to use this tool. See <a href="https://cloud.google.com/shell/docs/quickstart" target="_blank"> this page</a> for the getting started guide.
 
 Step 2: Setup the GCS compute zone.On the Google Cloud Shell, issue the command:
 
