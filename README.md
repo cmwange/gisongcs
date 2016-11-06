@@ -67,7 +67,7 @@ $ kubectl logs -f postgis
 
 Step 6: Load the data
 
-Convert and load relevant data (administrative boundaries as polygons, schools as points, perfomance) into the postgresql RDBMS. This step involves creating a number of views that become "layers" in Geoserver. Of course, take into account projection systems, Geometry columns, etc.
+Convert and load relevant data (administrative boundaries as polygons, schools as points, perfomance) into the postgresql RDBMS. This step involves creating a number of views that become "layers" in Geoserver. Of course, take into account projection systems, SRIDs, Geometry columns, etc.
 
 Step 7: Configure Geoserver.  Create layers, create styles, link the layers to styles, etc.
 
