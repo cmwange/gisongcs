@@ -71,5 +71,5 @@ Step 6: Load the data
 
 Load relevant data (administrative boundaries as polygons, schools as points, perfomance) into the postgresql RDBMS. This step involves creating a number of views that become "layers". Of course, take into account projection systems, Geometry columns, etc.
 
-Step 7: Configure GorServer.  Create layers, create styles, link the layers to styles, etc.
+Step 7: Configure Geoserver.  Create layers, create styles, link the layers to styles, etc.
 
