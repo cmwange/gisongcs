@@ -5,7 +5,7 @@ I use <a href="http://kubernetes.io/" target="_blank">Kubernetes</a>, <a href="h
 
 A bit of an introduction to <a href="https://en.wikipedia.org/wiki/Cloud_computing" target="_blank">Cloud Computing</a> is ideal, and of course reference to <a href="https://cloud.google.com" target="_blank">Google Cloud Services</a> (our preferred cloud platform) is mandatory.
 
-Step 1: connect to Google Cloud Shell. This is a shell environment for managing resources hosted on Google Cloud Platform. You will need a bit of Linux Skills to use this tool. See <a href="https://cloud.google.com/shell/docs/quickstart" target="_blank"> this page</a> for the getting started guide.
+Step 1: Connect to Google Cloud Shell. This is a shell environment for managing resources hosted on Google Cloud Platform. You will need a bit of Linux Skills to use this tool. See <a href="https://cloud.google.com/shell/docs/quickstart" target="_blank"> this page</a> for the getting started guide.
 
 Step 2: Setup the GCS compute zone.On the Google Cloud Shell, issue the command:
 
@@ -13,7 +13,7 @@ gcloud config set compute/zone us-central1-b
 
 to set the compte zone to us-central1-b zone
 
-Step 3: Pull (and/or create ) docker images. For this exrcise I will pull two existing images: geoserver and postgis, and create the third one: NGINX Web Server. We create because we want to customise the web content. We pull because we want to resue existing content. Reuse saves time and money.
+Step 3: Pull (and/or create ) docker images. For this exrcise I will pull two existing images: geoserver and postgis, and create the third one: NGINX Web Server. I create because I want to customise the web content. I pull because I want to resue existing content. Reuse saves time and money.
 
 $ docker pull mdillon/postgis
 
@@ -31,13 +31,13 @@ EXPOSE 80
 
 COPY webdir /usr/share/nginx/html
 
-Step 4: create disks
+Step 4: Create the persistent disks
 
 $ gcloud compute disks create --size 200GB postgis-disk
 
 $ gcloud compute disks create --size 200GB geoserver-disk
 
-Step 5: create the service files and replication controllers.
+Step 5: Create the service files and replication controllers.
 
 $ kubectl create -f mpostgres.yaml
 
@@ -71,5 +71,5 @@ Convert and load relevant data (administrative boundaries as polygons, schools a
 
 Step 7: Configure Geoserver.  Create layers, create styles, link the layers to styles, etc.
 
-Step 8: View sample output: http://146.148.76.240/index.html
+Step 8: View sample output here: http://146.148.76.240/index.html
 
