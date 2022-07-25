@@ -1,6 +1,6 @@
 # gisongcs
 
-The motivation behind this repository is to outline the steps required to develop a geospatial application using Google Cloud Services (GCS). This is part of my PhD project whereby I am showcasing technology trends (such as Cloud, Big Data, Linked Data and others) for faster (and easier) Spatial Data Infastructures (SDIs) development in Africa.
+The motivation behind this repository is to outline the steps required to develop a geospatial application using Google Cloud Services (GCS). This is part of a project whereby I am showcasing technology trends (such as Cloud, Big Data, Linked Data and others) for faster (and easier) Spatial Data Infastructures (SDIs) development in Africa.
 
 I use <a href="http://kubernetes.io/" target="_blank">Kubernetes</a>, <a href="https://www.docker.com/" target="_blank">Docker containers</a>, <a href="http://geoserver.org/" target="_blank" >GeoServer</a>, a Linux operating system flavour such as <a href="https://www.debian.org/" target="_blank" >Debian</a>, <a href="https://openlayers.org/" target="_blank" >OpenLayers</a>, <a href="https://www.nginx.com/resources/wiki/" target="_blank">Nginx</a> and of course a RDBMS with a spatial extender such as <a href="http://www.postgis.net/" target="_blank">PostGIS</a>. The App does not use a NoSQL DB.
 
